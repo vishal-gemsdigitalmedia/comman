@@ -1,0 +1,7 @@
+RewriteCond %{HTTP_HOST} ^https://www.innovativeppl.com/ [NC]
+RewriteRule ^(.*) https://innovativeppl.com//$1 [R=301,L]
+
+
+RewriteCond %{HTTP_HOST} ^innovativeinc\.co\.in$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.innovativeinc\.co\.in$
+RewriteRule ^/?$ "https\:\/\/www\.innovativeppl\.com\/" [R=301,L]
